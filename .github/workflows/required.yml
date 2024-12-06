@@ -1,0 +1,12 @@
+on:
+  workflow_call: {}
+
+jobs:
+  actionlint:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: reviewdog/action-actionlint@v1
+
+  validate-renovate-config:
+    uses: BlindfoldedSurgery/renovate-config/.github/workflows/validate.yml@main

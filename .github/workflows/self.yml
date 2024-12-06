@@ -4,15 +4,17 @@ on:
   pull_request: { }
 
 jobs:
+  required-meta:
+    uses: ./.github/workflows/required.yml
+
   commitizen-check:
-    uses: ./.github/workflows/commitizen-check.yml
+    uses: BlindfoldedSurgery/actions-releases/.github/workflows/commitizen-check.yml@v2
     with:
       build-tool: uv
       python-version: '3.13'
 
   commitizen-bump:
-    uses: ./.github/workflows/commitizen-bump.yml
-    if: false
+    uses: BlindfoldedSurgery/actions-releases/.github/workflows/commitizen-bump.yml@v2
     with:
       build-tool: uv
       publish-major-tag: true
