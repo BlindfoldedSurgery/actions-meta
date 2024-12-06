@@ -1,7 +1,7 @@
-# actions-releases
+# actions-meta
 
-This repository contains a set of reusable workflows geared towards supporting the release process
-of a versioned project.
+This repository contains a set of reusable workflows geared that apply to generic GitHub 
+repositories.
 
 The project follows semantic versioning. You can depend on tags for specific versions of use a
 major version tag (e.g. `v1`).
@@ -20,46 +20,5 @@ accidentally create commits with an unconventional message, install a pre-commit
 ```yaml
 jobs:
   commitizen:
-    uses: BlindfoldedSurgery/actions-releases/.github/workflows/commitizen.yml@v1
-    with:
-      python-version: '3.12'
+    uses: BlindfoldedSurgery/actions-meta/.github/workflows/required.yml@v1
 ```
-
-## Available Workflows
-
-### commitizen-check
-
-Checks whether commit messages in a PR abide by the [conventional commit][ccommit] rules.
-
-**Inputs:**
-
-| Name           | Required | Default |     Example      | Description                                      |
-|:---------------|:--------:|:-------:|:----------------:|--------------------------------------------------|
-| python-version |    no    | `3.11`  | `3.12`, `3.12.1` | The Python version with which to run commitizen. |
-
-### commitizen-bump
-
-Invokes cz bump for changes on the default branch and creates an (auto-merged) PR with the bump.
-
-**Inputs:**
-
-| Name              | Required | Default |     Example      | Description                                      |
-|:------------------|:--------:|:-------:|:----------------:|--------------------------------------------------|
-| publish-major-tag |    no    | `false` |  `true`/`false`  | Whether to publish a major tag (e.g. `v1`).      |
-| python-version    |    no    | `3.11`  | `3.12`, `3.12.1` | The Python version with which to run commitizen. |
-
-**Secrets:**
-
-| Name       | Required | Description                                                                      |
-|:-----------|:--------:|----------------------------------------------------------------------------------|
-| `GH_TOKEN` |   yes    | A GitHub personal access token that can create PRs and read/write repo contents. |
-
-### commitizen-version
-
-Provides the current project version as a `version` output.
-
-**Inputs:**
-
-| Name           | Required | Default |     Example      | Description                                      |
-|:---------------|:--------:|:-------:|:----------------:|--------------------------------------------------|
-| python-version |    no    | `3.11`  | `3.12`, `3.12.1` | The Python version with which to run commitizen. |
