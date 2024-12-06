@@ -7,7 +7,7 @@ jobs:
   required-meta:
     uses: ./.github/workflows/required.yml
 
-  commitizen-check:
+  check-commits:
     uses: BlindfoldedSurgery/actions-releases/.github/workflows/commitizen-check.yml@v2
     with:
       build-tool: uv
