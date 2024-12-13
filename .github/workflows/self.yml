@@ -19,6 +19,7 @@ jobs:
   commitizen-bump:
     uses: BlindfoldedSurgery/actions-releases/.github/workflows/commitizen-bump.yml@v2
     permissions:
+      contents: write
       pull-requests: write
     with:
       build-tool: uv
