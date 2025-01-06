@@ -11,13 +11,13 @@ jobs:
     uses: ./.github/workflows/required.yml
 
   check-commits:
-    uses: BlindfoldedSurgery/actions-releases/.github/workflows/commitizen-check.yml@v3
+    uses: BlindfoldedSurgery/actions-releases/.github/workflows/commitizen-check.yml@v4
     with:
       build-tool: uv
       python-version: '3.13'
 
   commitizen-bump:
-    uses: BlindfoldedSurgery/actions-releases/.github/workflows/commitizen-bump.yml@v3
+    uses: BlindfoldedSurgery/actions-releases/.github/workflows/commitizen-bump.yml@v4
     permissions:
       contents: write
       pull-requests: write
