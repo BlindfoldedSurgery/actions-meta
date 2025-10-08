@@ -17,3 +17,5 @@ jobs:
 
   validate-renovate-config:
     uses: BlindfoldedSurgery/renovate-config/.github/workflows/validate.yml@main
+    permissions:
+      contents: read
