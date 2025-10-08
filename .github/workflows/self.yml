@@ -9,6 +9,10 @@ permissions:
 jobs:
   required-meta:
     uses: ./.github/workflows/required.yml
+    permissions:
+      contents: read
+      checks: write
+      pull-requests: write
 
   check-commits:
     uses: BlindfoldedSurgery/actions-releases/.github/workflows/commitizen-check.yml@v4
