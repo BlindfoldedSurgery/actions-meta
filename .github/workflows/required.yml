@@ -1,6 +1,11 @@
 on:
   workflow_call: {}
 
+permissions:
+  contents: read
+  checks: write
+  pull-requests: write
+
 jobs:
   actionlint:
     runs-on: ubuntu-24.04
