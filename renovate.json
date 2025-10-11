@@ -7,8 +7,8 @@
   "enabled": true,
   "packageRules": [
     {
-      "matchDepNames": [
-        "poetry"
+      "matchCategories": [
+        "ci"
       ],
       "matchUpdateTypes": [
         "minor",
@@ -17,8 +17,8 @@
       "semanticCommitType": "feat"
     },
     {
-      "matchDepNames": [
-        "poetry"
+      "matchCategories": [
+        "ci"
       ],
       "matchUpdateTypes": [
         "patch"
