@@ -1,3 +1,9 @@
+## v2.2.0 (2025-11-20)
+
+### Feat
+
+- **deps**: update actions/checkout action to v6
+
 ## v2.1.0 (2025-10-11)
 
 ### Feat
