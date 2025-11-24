@@ -1,7 +1,7 @@
 [project]
 name = "actions-meta"
 description = "GitHub Actions Workflows for generic repositories"
-version = "2.2.0"
+version = "2.3.0"
 authors = [{ name = "BlindfoldedSurgery", email = "team@blindfolded.surgery" }]
 classifiers = [
     "Private :: Do Not Upload",
