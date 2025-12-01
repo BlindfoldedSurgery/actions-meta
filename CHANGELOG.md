@@ -1,3 +1,9 @@
+## v2.3.1 (2025-12-01)
+
+### Fix
+
+- **deps**: update reviewdog/action-actionlint action to v1.69.1
+
 ## v2.3.0 (2025-11-24)
 
 ### Feat
