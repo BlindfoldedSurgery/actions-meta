@@ -1,3 +1,10 @@
+## v2.6.1 (2026-04-16)
+
+### Fix
+
+- pin pre-commit
+- pin all third-party actions
+
 ## v2.6.0 (2026-03-31)
 
 ### Feat
