@@ -1,3 +1,9 @@
+## v2.7.1 (2026-07-26)
+
+### Fix
+
+- **deps**: update dependency pre-commit to v4.6.1
+
 ## v2.7.0 (2026-07-26)
 
 ### Feat
