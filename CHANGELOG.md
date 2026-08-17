@@ -1,3 +1,9 @@
+## v2.7.3 (2026-08-17)
+
+### Fix
+
+- **deps**: update dependency pre-commit to v4.6.2
+
 ## v2.7.2 (2026-08-12)
 
 ### Fix
