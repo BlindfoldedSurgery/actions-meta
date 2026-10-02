@@ -1,3 +1,9 @@
+## v2.10.0 (2026-10-02)
+
+### Feat
+
+- **deps**: update blindfoldedsurgery/actions-releases action to v6
+
 ## v2.9.0 (2026-10-01)
 
 ### Feat
