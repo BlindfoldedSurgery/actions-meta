@@ -1,3 +1,9 @@
+## v2.11.0 (2026-10-02)
+
+### Feat
+
+- **deps**: update dependency ubuntu to v26
+
 ## v2.10.1 (2026-10-02)
 
 ### Fix
